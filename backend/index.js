@@ -21,5 +21,7 @@ mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: tr
     (Error) => console.log(Error.message)
 );
 
+mongoose.set('useFindAndModify', false);
+
 
 
